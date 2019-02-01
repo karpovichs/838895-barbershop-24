@@ -81,5 +81,28 @@
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="" method="get">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" type="text" name="login" id="user-login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="Пароль">
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember" checked>
+            Запомнить меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль</a>
+        </p>
+        <button class="button button-login" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
