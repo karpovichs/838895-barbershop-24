@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Средства для ухода</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -27,7 +30,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="shop.html">Магазин</a></li>
-        <li class="breadcrumbs-current"><a href="catalog.html">Средства для ухода</a></li>
+        <li class="breadcrumbs-current">Средства для ухода</li>
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -64,20 +67,20 @@
           </fieldset>
           <fieldset>
             <legend>Группы товаров:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="shaving" id="filter-shaving">
-                  <label for="filter-shaving">Бритвенные принадлежности</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="care" id="filter-care" checked>
-                  <label for="filter-care">Средства для ухода</label>
-                </li>
-                <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="accessories" id="filter-accessories">
-                  <label for="filter-accessories">Аксессуары</label>
-                </li>
-              </ul>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="shaving" id="filter-shaving">
+                <label for="filter-shaving">Бритвенные принадлежности</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="care" id="filter-care" checked>
+                <label for="filter-care">Средства для ухода</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-type" value="accessories" id="filter-accessories">
+                <label for="filter-accessories">Аксессуары</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="button filter-button" type="submit">Показать</button>
         </form>

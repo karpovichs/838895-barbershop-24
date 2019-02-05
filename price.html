@@ -2,9 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Прайс-лист</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -13,7 +16,7 @@
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
-          <li class="site-navigation-current"><a href="price.html">Прайс-лист</a></li>
+          <li class="site-navigation-current">Прайс-лист</li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
@@ -29,31 +32,37 @@
         <li class="breadcrumbs-current"><a href="shop.html">Прайс-лист</a></li>
       </ul>
       <b class="price-slogan">Истинно мужская классика</b>
-      <h2>Мы используем только лучшие средства:</h2>
-      <ul class="">
-        <li>Baxter of California</li>
-        <li>Mr Natty</li>
-        <li>Suavecito</li>
-        <li>Malin+Goetz</li>
-      </ul>
-      <h2>Цены на услуги наших мастеров:</h2>
-      <table class="price-table">
-        <tr>
-          <td>Стрижка</td>
-          <td>1500 ₽</td>
-        </tr>
-        <tr>
-          <td>Стрижка бороды</td>
-          <td>500 ₽</td>
-        </tr>
-        <tr>
-          <td>Накрутка усов</td>
-          <td>350 ₽</td>
-        </tr>
-      </table>
-      <h2>Несколько слов о нас:</h2>
-      <p class="about-us-info">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-      <p class="about-us-info">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+      <section class="use-products">
+        <h2>Мы используем только лучшие средства:</h2>
+        <ul>
+          <li>Baxter of California</li>
+          <li>Mr Natty</li>
+          <li>Suavecito</li>
+          <li>Malin+Goetz</li>
+        </ul>
+      </section>
+      <section class="our-price">
+        <h2>Цены на услуги наших мастеров:</h2>
+        <table class="price-table">
+          <tr>
+            <td>Стрижка</td>
+            <td>1500 ₽</td>
+          </tr>
+          <tr>
+            <td>Стрижка бороды</td>
+            <td>500 ₽</td>
+          </tr>
+          <tr>
+            <td>Накрутка усов</td>
+            <td>350 ₽</td>
+          </tr>
+        </table>
+      </section>
+      <section class="short-about-us">
+        <h2>Несколько слов о нас:</h2>
+        <p class="about-us-info">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        <p class="about-us-info">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+      </section>
     </main>
     <footer class="general-footer">
       <p class="footer-contacts">
@@ -84,7 +93,7 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="user-login">Логин</label>
           <input class="login-icon-user" type="text" name="login" id="user-login" placeholder="Логин">
